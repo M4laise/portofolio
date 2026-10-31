@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matei Stănescu - Portfolio</title>
+  <meta name="description" content="Portfolio of Matei Stănescu— projects, screenshots and details.">
+  <meta name="theme-color" content="#0e0a0f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect width='8' height='8' fill='%230e0a0f'/%3E%3Crect x='1' y='1' width='6' height='6' fill='%234c1442'/%3E%3Crect x='3' y='3' width='2' height='2' fill='%23dddb9e'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="tag">&gt; PORTOFOLIO</p>
+      <h1>MATEI STĂNESCU<span class="cursor" aria-hidden="true"></span></h1>
+      <p class="desc">
+        Hello! I'm <strong>Matei Stănescu</strong>, a software and game developer with 5 years of experience. I'm located in Bucharest, Romania. My areas of preference are software engineering, game design, art and music.
+
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="#projects">&#9660; PROJECTS</a>
+        <a class="btn btn-ghost" href="https://soundcloud.com/stanescumatei" target="_blank" rel="noopener">&#9835; SOUNDCLOUD</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROJECTS -->
+  <main id="projects" class="section">
+    <h2 class="section-title">PROJECTS</h2>
+    <p class="section-sub">Select a project to see details.</p>
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> MATEI STĂNESCU &middot; <a href="https://soundcloud.com/stanescumatei" target="_blank" rel="noopener">SOUNDCLOUD</a></p>
+  </footer>
+
+  <!-- PROJECT DETAIL -->
+  <dialog id="modal" aria-labelledby="m-title">
+    <div class="modal-box">
+      <button class="close" id="m-close" aria-label="Close">X</button>
+      <h3 id="m-title"></h3>
+      <p id="m-meta" class="meta"></p>
+
+      <div class="viewer" id="m-viewer"></div>
+      <div class="thumbs" id="m-thumbs"></div>
+      <p class="caption" id="m-caption"></p>
+
+      <div id="m-body" class="body"></div>
+      <div id="m-tags" class="tags"></div>
+      <div id="m-links" class="links"></div>
+    </div>
+  </dialog>
+
+  <script src="projects.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
